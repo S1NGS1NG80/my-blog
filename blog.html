@@ -8,6 +8,7 @@
     <title>My-Blog-Page</title>
 </head>
 
+<header>
 <body>
     <div class="theme-switch">
         <input type="checkbox" class="checkbox" id="checkbox" />
@@ -17,15 +18,28 @@
             <div class="switcher"></div>
         </label>
     </div>
+    <h1>Blog</h1>
+</header>
 
     <main>
-        <h1>Blog</h1>
-        <div id="data"></div>
+             <div id="data">
+            <h3>Username: </h3>
+            <p id="username"></p>
+            <h3>Blog Title: </h3>
+            <p id="blogTitle"></p>
+            <h3>Content: </h3>
+            <p id="content"></p>
+        </div>
         <div>
-            <button id="btn">Return</button>
+            <button onclick="location.href = 'index.html';" id="btn">Return</button>
         </div>
     </main>
 
+    <footer>
+        <p>Created by Sean Singer</p>
+        <a href="https://s1ngs1ng80.github.io/Challenge-2/">Portfolio</a>  
+
+    </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script src="assets/js/blog.js"></script>
 </body>

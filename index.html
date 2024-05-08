@@ -15,7 +15,7 @@
 </head>
 
 <body>
-
+<header>
     <!-- Dark and Light theme switcher -->
     <div class="theme-switch">
         <input type="checkbox" class="checkbox" id="checkbox" />
@@ -25,7 +25,7 @@
             <div class="switcher"></div>
         </label>
     </div>
-
+</header>
 
 
     <h1>My-Blog</h1>
@@ -34,11 +34,11 @@
 
     <form id="my-blog">
 
-        <input type="text" id="uname" placeholder="Enter username">
+        <input type="text" id="uname" required maxlength="20" placeholder="Enter username">
 
-        <input type="text" id="btitle" placeholder="Enter title">
+        <input type="text" id="btitle" required maxlength="50" placeholder="Enter title">
 
-        <textarea id="content" name="content" placeholder="Enter content" rows="5" cols="80"></textarea>
+        <textarea id="content" name="content" required maxlength="500" placeholder="Enter content" rows="5" cols="80"></textarea>
 
         <p>
             <button type="submit">Submit</button>

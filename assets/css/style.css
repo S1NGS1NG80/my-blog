@@ -7,6 +7,7 @@
 
 body {
     height: 100%;
+    width: 100vmax;
     background-color: white;
     color: black;
     font-family: "Fira Sans", sans-serif;
@@ -16,10 +17,15 @@ body {
 
 
 h1 {
-    background-color: seagreen;
-    width: 100%;
+    background-color: darkolivegreen;
+    width: auto;
+    padding-left: 20px;
 }
 
+h2 {
+    background-color:olivedrab;
+    padding-left: 20px;
+}
 .checkbox {
     opacity: 0;
     position: absolute;
@@ -64,7 +70,7 @@ h1 {
 /* dark theme */
 body.dark {
     background-color: #1e272e;
-    color: #fff;
+    color:tan;
 }
 
 body.dark p {

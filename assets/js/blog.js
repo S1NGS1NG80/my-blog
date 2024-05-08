@@ -5,17 +5,13 @@ checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark");
 });
 
-const userNameText = document.querySelector("#uname");
-const blogTitleText = document.querySelector("btitle");
+const username = localStorage.getItem('username');
+const blogTitle = localStorage.getItem('blogTitle');
+const content = localStorage.getItem('content');
 
-const json = localStorage.getItem('form');
-const obj = JSON.parse(json);
+console.log(username, blogTitle, content);
 
-for (key in obj) {
-    const markup = `
-    <div>
-        <span>${key}: ${obj[key]}</span>
-    </div>
-    `;
-    document.getElementById('data').innerHTML += markup;
-}
+document.getElementById("username").textContent = username;
+document.getElementById("blogTitle").textContent = blogTitle;
+document.getElementById("content").textContent = content;
+
