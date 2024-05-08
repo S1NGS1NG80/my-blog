@@ -1,21 +1,29 @@
 * {
-    padding: 0;
+    padding: 5;
     margin: 0;
     box-sizing: border-box;
+
 }
 
 body {
+    height: 100%;
     background-color: white;
     color: black;
     font-family: "Fira Sans", sans-serif;
     background-color: white;
+
 }
 
+
+h1 {
+    background-color: seagreen;
+    width: 100%;
+}
 
 .checkbox {
     opacity: 0;
     position: absolute;
-  
+
 }
 
 .label {
@@ -43,11 +51,11 @@ body {
 
 .moon {
     color: #ffa502;
-  }
-  
-  .sun {
+}
+
+.sun {
     color: #ffff00;
-  }
+}
 
 .checkbox:checked+.label .switcher {
     transform: translateX(24px);
@@ -63,6 +71,6 @@ body.dark p {
     color: #fff;
 }
 
-body.dark h3 {
+body.dark h2 h3 {
     color: #fff;
 }

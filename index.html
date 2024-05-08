@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- link to style.css, web page style -->
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <!-- link to form.css, form style -->
-    <link rel="stylesheet" href="assets/css/form.css" />
+    <link rel="stylesheet" href="assets/css/form.css">
 
     <title>My-blog</title>
 
 </head>
 
 <body>
+
     <!-- Dark and Light theme switcher -->
     <div class="theme-switch">
         <input type="checkbox" class="checkbox" id="checkbox" />
@@ -25,6 +26,29 @@
         </label>
     </div>
 
+
+
+    <h1>My-Blog</h1>
+
+    <h2>What's on your mind?</h2>
+
+    <form id="my-blog">
+
+        <input type="text" id="uname" placeholder="Enter username">
+
+        <input type="text" id="btitle" placeholder="Enter title">
+
+        <textarea id="content" name="content" placeholder="Enter content" rows="5" cols="80"></textarea>
+
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+    </form>
+
+
+    <!--Referenced from
+        https://www.freecodecamp.org/news/how-to-make-a-landing-page-with-html-css-and-javascript/#howtomakethedarkandlightthemeswitcher
+        -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 
     <script src="assets/js/form.js"></script>

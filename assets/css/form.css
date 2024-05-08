@@ -1,0 +1,18 @@
+form {
+    background-color: seagreen;
+    width: fit-content;
+    margin-top: 50px;
+}
+
+form input,
+textarea {
+    width: 500px;
+    margin: 20px;
+    padding: 9px 9px 10px;
+    display: block;
+    outline: none;
+}
+
+button {
+    float: right;
+}
