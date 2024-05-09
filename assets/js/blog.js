@@ -5,16 +5,26 @@ checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark");
 });
 
-// const username = localStorage.getItem('username');
-// const blogTitle = localStorage.getItem('blogTitle');
-// const content = localStorage.getItem('content');
+// Select the container where you want to display the blogs
+const container = document.getElementById("data");
 
-const blogs = JSON.parse(localStorage.getItem("blogs"))
-console.log(blogs)
+// Retrieve the array of blogs from localStorage
+const blogs = JSON.parse(localStorage.getItem("blogs")) || [];
 
+// Loop over each blog entry in the array
+blogs.forEach(blog => {
+    // Create elements to display the blog data
+    const usernameElement = document.createElement("p");
+    usernameElement.textContent = "Username: " + blog.username;
 
-//need to loop over the blogs array
+    const titleElement = document.createElement("p");
+    titleElement.textContent = "Blog Title: " + blog.blogTitle;
 
+    const contentElement = document.createElement("p");
+    contentElement.textContent = "Content: " + blog.content;
 
-
-// document.createElement
+    // Append the elements to the container
+    container.appendChild(usernameElement);
+    container.appendChild(titleElement);
+    container.appendChild(contentElement);
+});
