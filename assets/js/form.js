@@ -5,10 +5,11 @@ form.addEventListener('submit', (event) => {
     const username = document.getElementById('uname').value;
     const blogTitle = document.getElementById('btitle').value;
     const content = document.getElementById('content').value;
-    
+
     localStorage.setItem('username', username);
     localStorage.setItem('blogTitle', blogTitle);
     localStorage.setItem('content', content);
+
     window.open("blog.html", "_self");
 })
 
