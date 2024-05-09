@@ -5,14 +5,16 @@ checkbox.addEventListener("change", () => {
     document.body.classList.toggle("dark");
 });
 
-const username = localStorage.getItem('username');
-const blogTitle = localStorage.getItem('blogTitle');
-const content = localStorage.getItem('content');
+// const username = localStorage.getItem('username');
+// const blogTitle = localStorage.getItem('blogTitle');
+// const content = localStorage.getItem('content');
 
-// console.log(username, blogTitle, content);
+const blogs = JSON.parse(localStorage.getItem("blogs"))
+console.log(blogs)
 
-// displays user info and content
-document.getElementById("username").textContent = username;
-document.getElementById("blogTitle").textContent = blogTitle;
-document.getElementById("content").textContent = content;
 
+//need to loop over the blogs array
+
+
+
+// document.createElement
